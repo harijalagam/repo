@@ -1,0 +1,77 @@
+Ansible Server--
+----------------
+----------------
+
+yum install epel-release
+
+yum update
+
+yum install git python-devel python-pip openssl ansible
+
+
+Ansible -Server
+----------------
+----------------
+
+yum install epel-release
+
+yum install git python-devel python-pip openssl ansible
+
+ansible--version
+
+cd/etc/ansible
+
+vi ansible.cfg
+--------------
+--------------
+
+inventory
+sudo_user
+:wq!
+cd/etc/ansible
+vi hosts
+--------
+--------
+[local]
+local host
+{group}
+ip address
+
+--------------
+useradd ansible
+
+passwd ansible
+
+visudo
+root    ALL=(ALL)
+ansible ALL =(ALL)       NO PASSWD :ALL
+
+
+PASSWORD LESS AUTHITICATION CREATE:
+---------------------------------
+su -ansible
+ssh-keygen
+
+ls -la
+
+ssh-copy-id ansible@ client ip(192.168.147.141)
+
+how to connect another server:
+-------------------------------
+ssh client ip (192.168.147.142)
+exit 
+
+
+copy:
+----
+ssh-copy-id localhost
+
+
+
+
+ansible group1 -m(module) ping
+
+ansible group -a"ls-l/opt"
+ansible group -a "cat/etc/passwd"
+ansible group -s-a"touch/opt/f1"
+ansible group -m copy -a -s "src=/opt/f1(server)dest=/opt"
