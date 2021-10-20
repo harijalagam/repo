@@ -1,0 +1,234 @@
+.LOG
+
+.GIT
+
+git init
+
+git config --global user.name "Devops"
+
+git config --global user.email"Devops@gmail.com"
+
+git config --list
+
+touch file1
+
+git status
+
+git add file1
+
+git status
+
+git commit -m "label name"
+
+git status
+
+git log
+
+touch f1 f2 f3
+
+git add .
+
+git status
+
+git commit -m "label name"         (no of files commit)
+
+git commit -m "label name" f1      (single file commit)
+
+git status
+
+git log
+
+git show cid
+
+repo-1 (central)
+
+git clone path/of/c-repo
+
+cd repo-1
+
+touch f1
+
+git add f1
+
+git commit -m "label"
+
+git status
+
+git log
+
+git push
+
+git log --oneline
+
+git log -n    ( want see laest files command)
+
+git log --oneline -n
+
+git log --author=authorname (example devops)
+
+git log --since=yy-mm-dd
+
+git log --until=yy-mm-dd
+
+git log --onelone -- decorate
+
+------(local repository to index and workspace ki shift cheyadanini commands)-----
+
+git reset cid (indexing loki reset)
+
+git head file1 (workspace loki reset)
+
+git --mixed cid (direct ga local repository nundi workstation ki reset)
+
+--------(Braches Creation)-------------
+
+git branch
+
+git branch master-1
+
+git branch
+
+git checkout master-1
+
+git clone httpd://github.com/polarupu/batch-25.git
+
+cd batch-25
+
+touch name
+
+git add .
+
+git commit -m "label"
+
+git pull
+
+git push
+
+
+cat filename  ( file creation and read file )
+
+touch test ( new file creation)
+
+touch test test1 test2 (multiple file creation)
+
+cat > file1
+Hello d6 file
+ctrl + 
+
+cat >> file ( file adding data)
+Helloooo
+ctrl + d
+
+vi d7
+esc i
+Hello message 
+how ru 
+esc:q
+esc:wq
+
+-----conflict error------
+git merge master 1
+
+git merge --abort (to quit the conflict error)
+
+------STASH MEORY (TEMPRORY STORAGE AREA MEMORY)-------
+
+git stash list
+
+touch f1
+
+git add .
+
+git status
+
+git stash save "stash=1"
+
+git stash list
+
+git status
+
+git stash pop ((((stash@{0})))))    (file copy and stash memory delete)
+
+git stash pop stash@{1}
+
+git stash apply ((((stash@{0})))
+
+git stash apply stash@{3}
+
+git stash drop (((stash@{0})))
+
+git stash drop stash@{1}
+
+-----Alias Name creation------------
+
+git config --list
+
+git config --global alias .l "log"
+
+git log --oneline
+
+git config --global alias l1 "log --oneline"
+
+git config --global --unset user.name (total user delete avuthundi)
+
+git config --global --unset alias.l1
+
+git config --list
+
+-----ANY FILE IGNORE --------
+
+vi .gitignore
+
+
+
+
+-----TAG CRATION-----
+
+git tag
+
+git tag v-1.1
+
+git tag -d v-1.1
+
+git push origin v-1.1
+
+git push --tags
+
+git tag -d v-1.1
+
+git push origin -d v-1.1 (centralised repository lo delete chyealnte)
+
+git push origin -d v-1.1
+
+git tag  v-1.2 cid  (particular file push cheyalante)
+
+-----commit label name change-----only latest commit we can change-----
+
+git commit --amend -m "new label"
+
+
+
+git tag v-1.2
+
+
+
+----cloning to git repository------
+
+git clone https://github.com/polarau/batch-25.git
+
+cd batch -25
+
+git branch
+
+git branch -r
+
+git checkout origin/master 1
+
+
+
+
+
+
+19:10 15-06-2021
+
+20:59 08-08-2021
