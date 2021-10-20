@@ -1,0 +1,13 @@
+Maven is a Build tool and as well as project management tool.
+maven create multiple executive files.
+Maven 3 types of repositories local and central and remote
+jdk1.8 or jdk 9 want to install.
+
+cmd:mvn archtype:generate
+
+mvn test
+
+
+linux.git maven,jenkins,docker,kunents,ansible,nagious
+
+i had so much experience 
